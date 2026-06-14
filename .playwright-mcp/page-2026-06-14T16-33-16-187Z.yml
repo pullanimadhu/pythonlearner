@@ -1,0 +1,36 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - heading "🐍 Python Q&A Assistant" [level=1] [ref=e3]
+    - generic [ref=e4]: LangGraph RAG
+    - generic [ref=e5]: Hybrid Retrieval
+  - generic [ref=e6]:
+    - generic [ref=e8]:
+      - text: 👋 Hi! I'm a Python Q&A assistant powered by an adaptive RAG pipeline. Ask me any Python programming question and I'll search my knowledge base of Stack Overflow Q&A to find relevant answers.
+      - strong [ref=e9]: "Try:"
+      - text: "\"How do I iterate over a dictionary?\" or \"How to use itertools.groupby?\""
+    - generic [ref=e16]: How to iterate over cx_Oracle result set?
+    - generic [ref=e24]:
+      - text: "✅ Based on the provided context, there are several ways to iterate over a cx_Oracle result set, each with its own trade-offs [Source 1]: 1. **Use the built-in cursor iterator (Canonical Way):** This is the standard and recommended way to iterate through a result set. ```python curs.execute('select * from people') for row in curs: print(row) ``` 2. **Use `fetchall()`:** This method retrieves all the rows from the result set at once. It can be convenient for smaller result sets or when you want to build a list directly. However, for large result sets, it can cause high memory usage on the client, delay processing until all rows are fetched, and incur performance overhead from constructing and destructing the list [Source 1]. ```python for row in curs.fetchall(): print(row) ``` 3. **Use `fetchone()`:** If you know only a single row is being returned, you can use `fetchone()` to grab just that row [Source 1]. ```python curs.execute('select max(x) from t') maxValue = curs.fetchone()[0] ``` Alternatively, you can use a `while` loop with `fetchone()` to fetch one row at a time, although there is generally no advantage to doing this over the standard cursor iterator [Source 1]. ```python row = curs.fetchone() while row: print(row) row = curs.fetchone() ```"
+      - generic [ref=e25]:
+        - text: "Tags:"
+        - generic [ref=e26]: python
+        - generic [ref=e27]: database
+        - generic [ref=e28]: sql
+        - generic [ref=e29]: loops
+        - generic [ref=e30]: iterator
+      - generic [ref=e31]:
+        - strong [ref=e32]: "📚 Sources:"
+        - generic [ref=e33]:
+          - text: "[1]"
+          - strong [ref=e34]: "Q594:"
+          - text: "cx_Oracle: How do I iterate over a result set? (score: 25)"
+          - generic [ref=e35]: python
+          - generic [ref=e36]: sql
+          - generic [ref=e37]: database
+          - generic [ref=e38]: oracle
+          - generic [ref=e39]: cx-oracle
+  - generic [ref=e10]:
+    - generic [ref=e11]:
+      - textbox "Ask a Python question..." [active] [ref=e12]
+      - button "Ask" [ref=e13] [cursor=pointer]
+    - generic [ref=e14]: Connecting...
