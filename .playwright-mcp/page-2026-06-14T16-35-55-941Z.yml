@@ -1,0 +1,117 @@
+- generic [ref=e3]:
+  - generic:
+    - img
+  - generic [ref=e5]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - heading "Python Q&A Assistant 1.0.0 OAS 3.1" [level=1] [ref=e10]:
+          - text: Python Q&A Assistant
+          - generic [ref=e11]:
+            - generic [ref=e13]: 1.0.0
+            - generic [ref=e15]: OAS 3.1
+        - link "/openapi.json" [ref=e16] [cursor=pointer]:
+          - /url: /openapi.json
+          - generic [ref=e17]: /openapi.json
+      - paragraph [ref=e20]: Adaptive RAG pipeline with LangGraph + Hybrid Retrieval (FAISS + BM25 + RRF)
+    - generic [ref=e23]:
+      - generic [ref=e25]:
+        - heading "api Collapse operation" [level=3] [ref=e26] [cursor=pointer]:
+          - link "api" [ref=e27]:
+            - /url: "#/api"
+          - button "Collapse operation" [expanded] [ref=e28]:
+            - img [ref=e29]
+        - generic [ref=e32]:
+          - generic [ref=e35] [cursor=pointer]:
+            - button "GET /health Health" [ref=e36]:
+              - generic [ref=e37]: GET
+              - generic [ref=e38]:
+                - link "/health" [ref=e40]:
+                  - /url: "#/api/health_health_get"
+                - generic [ref=e41]: Health
+            - generic "Copy to clipboard"
+            - button "get /health" [ref=e44]:
+              - img [ref=e45]
+          - generic [ref=e49] [cursor=pointer]:
+            - button "POST /ask Ask" [ref=e50]:
+              - generic [ref=e51]: POST
+              - generic [ref=e52]:
+                - link "/ask" [ref=e54]:
+                  - /url: "#/api/ask_ask_post"
+                - generic [ref=e55]: Ask
+            - generic "Copy to clipboard"
+            - button "post /ask" [ref=e58]:
+              - img [ref=e59]
+          - generic [ref=e63] [cursor=pointer]:
+            - button "GET /ui Ui" [ref=e64]:
+              - generic [ref=e65]: GET
+              - generic [ref=e66]:
+                - link "/ui" [ref=e68]:
+                  - /url: "#/api/ui_ui_get"
+                - generic [ref=e69]: Ui
+            - generic "Copy to clipboard"
+            - button "get /ui" [ref=e72]:
+              - img [ref=e73]
+      - generic [ref=e76]:
+        - heading "default Collapse operation" [level=3] [ref=e77] [cursor=pointer]:
+          - link "default" [ref=e78]:
+            - /url: "#/default"
+          - button "Collapse operation" [expanded] [ref=e79]:
+            - img [ref=e80]
+        - generic [ref=e86] [cursor=pointer]:
+          - button "GET / Root" [ref=e87]:
+            - generic [ref=e88]: GET
+            - generic [ref=e89]:
+              - link / [ref=e91]:
+                - /url: "#/default/root__get"
+              - generic [ref=e92]: Root
+          - generic "Copy to clipboard"
+          - button "get /" [ref=e95]:
+            - img [ref=e96]
+    - generic [ref=e100]:
+      - heading "Schemas" [level=4] [ref=e101] [cursor=pointer]:
+        - button "Schemas" [expanded] [ref=e102]:
+          - generic [ref=e103]: Schemas
+          - img [ref=e104]
+      - generic [ref=e106]:
+        - article [ref=e107]:
+          - generic [ref=e108]:
+            - button "AskRequest" [ref=e109] [cursor=pointer]:
+              - generic [ref=e111]: AskRequest
+              - img [ref=e113]
+            - button "Expand all" [ref=e115] [cursor=pointer]
+            - strong [ref=e116]: object
+        - article [ref=e117]:
+          - generic [ref=e118]:
+            - button "AskResponse" [ref=e119] [cursor=pointer]:
+              - generic [ref=e121]: AskResponse
+              - img [ref=e123]
+            - button "Expand all" [ref=e125] [cursor=pointer]
+            - strong [ref=e126]: object
+        - article [ref=e127]:
+          - generic [ref=e128]:
+            - button "HTTPValidationError" [ref=e129] [cursor=pointer]:
+              - generic [ref=e131]: HTTPValidationError
+              - img [ref=e133]
+            - button "Expand all" [ref=e135] [cursor=pointer]
+            - strong [ref=e136]: object
+        - article [ref=e137]:
+          - generic [ref=e138]:
+            - button "HealthResponse" [ref=e139] [cursor=pointer]:
+              - generic [ref=e141]: HealthResponse
+              - img [ref=e143]
+            - button "Expand all" [ref=e145] [cursor=pointer]
+            - strong [ref=e146]: object
+        - article [ref=e147]:
+          - generic [ref=e148]:
+            - button "SourceInfo" [ref=e149] [cursor=pointer]:
+              - generic [ref=e151]: SourceInfo
+              - img [ref=e153]
+            - button "Expand all" [ref=e155] [cursor=pointer]
+            - strong [ref=e156]: object
+        - article [ref=e157]:
+          - generic [ref=e158]:
+            - button "ValidationError" [ref=e159] [cursor=pointer]:
+              - generic [ref=e161]: ValidationError
+              - img [ref=e163]
+            - button "Expand all" [ref=e165] [cursor=pointer]
+            - strong [ref=e166]: object

@@ -1,0 +1,14 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - heading "🐍 Python Q&A Assistant" [level=1] [ref=e3]
+    - generic [ref=e4]: LangGraph RAG
+    - generic [ref=e5]: Hybrid Retrieval
+  - generic [ref=e8]:
+    - text: 👋 Hi! I'm a Python Q&A assistant powered by an adaptive RAG pipeline. Ask me any Python programming question and I'll search my knowledge base of Stack Overflow Q&A to find relevant answers.
+    - strong [ref=e9]: "Try:"
+    - text: "\"How do I iterate over a dictionary?\" or \"How to use itertools.groupby?\""
+  - generic [ref=e10]:
+    - generic [ref=e11]:
+      - textbox "Ask a Python question..." [active] [ref=e12]
+      - button "Ask" [ref=e13] [cursor=pointer]
+    - generic [ref=e14]: Connecting...
